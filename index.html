@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteForce - Engineering Collective</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="text-emerald-400 font-mono text-xl font-semibold tracking-tight group-hover:text-emerald-300 transition-colors">&lt;BF/&gt;</span>
+        <span class="font-semibold text-white text-sm tracking-wide">ByteForce</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-gray-400">
+        <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="#team" class="hover:text-emerald-400 transition-colors">Team</a>
+        <a href="#stack" class="hover:text-emerald-400 transition-colors">Stack</a>
+        <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+        <a href="https://github.com/ByteForce-Inc" target="_blank" class="flex items-center gap-1.5 text-gray-300 border border-gray-700 px-4 py-1.5 rounded-full hover:border-emerald-500 hover:text-emerald-400 transition-all text-xs font-mono">
+          GitHub ↗
+        </a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white focus:outline-none" aria-label="Toggle menu">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-950 border-t border-gray-800 px-6 py-4 flex flex-col gap-4 text-sm text-gray-400">
+      <a href="#about" class="hover:text-emerald-400 transition-colors mobile-link">About</a>
+      <a href="#team" class="hover:text-emerald-400 transition-colors mobile-link">Team</a>
+      <a href="#stack" class="hover:text-emerald-400 transition-colors mobile-link">Stack</a>
+      <a href="#contact" class="hover:text-emerald-400 transition-colors mobile-link">Contact</a>
+    </div>
+  </nav>
+
+
+  <section class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+    <div class="grid-bg absolute inset-0 opacity-20"></div>
+    <div class="absolute inset-0 radial-fade"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-full px-4 py-1.5 text-xs text-emerald-400 font-mono mb-8 fade-up">
+        <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
+        born at a hackathon · still building
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight mb-20 fade-up delay-1">
+together.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up delay-3">
+        <a href="#team" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold px-8 py-3 rounded-full transition-all hover:scale-105 text-sm">
+          Meet the Team
+        </a>
+        <a href="#about" class="w-full sm:w-auto border border-gray-700 hover:border-emerald-500 text-gray-300 hover:text-emerald-400 font-medium px-8 py-3 rounded-full transition-all text-sm">
+          What We Do
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-gray-600">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade-in">
+          <p class="text-emerald-400 font-mono text-sm mb-3">// about us</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
+            Built on curiosity.<br/>Powered by code.
+          </h2>
+          <p class="text-gray-400 leading-relaxed mb-6">
+            ByteForce started when a group of us met during a hackathon weekend. The competition ended but our collaboration didn't. We decided to keep the team alive - as a GitHub org, a community, a family and a space to build ambitious things together.
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            We're engineers from different backgrounds: frontend, backend i.e microservices, mobile and machine-learning united by a shared drive to ship real projects and sharpen our craft in public.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 fade-in delay-1">
+          <div class="stat-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-800 transition-colors">
+            <p class="text-3xl font-bold text-emerald-400 font-mono mb-1" id="counter-members">0</p>
+            <p class="text-sm text-gray-500">Team Members</p>
+          </div>
+          <div class="stat-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-800 transition-colors">
+            <p class="text-3xl font-bold text-emerald-400 font-mono mb-1" id="counter-projects">0</p>
+            <p class="text-sm text-gray-500">Projects Built</p>
+          </div>
+          <div class="stat-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-800 transition-colors">
+            <p class="text-3xl font-bold text-emerald-400 font-mono mb-1" id="counter-commits">0</p>
+            <p class="text-sm text-gray-500">GitHub Commits</p>
+          </div>
+          <div class="stat-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-800 transition-colors">
+            <p class="text-3xl font-bold text-white font-mono mb-1">∞</p>
+            <p class="text-sm text-gray-500">Ideas in Queue</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-24">
+        <p class="text-emerald-400 font-mono text-sm mb-3 text-center">// what we do</p>
+        <h2 class="text-3xl font-bold text-white text-center mb-12">How we spend our time</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="service-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-700 transition-all group fade-in">
+            <div class="text-emerald-400 text-2xl mb-4 text-center">⚡</div>
+            <h3 class="font-semibold text-white mb-2 text-lg">Build Projects</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">From weekend experiments to production-grade apps - we ship things and learn by doing.</p>
+          </div>
+          <div class="service-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-700 transition-all group fade-in delay-1">
+            <div class="text-emerald-400 text-2xl mb-4 text-center">🧠</div>
+            <h3 class="font-semibold text-white mb-2 text-lg">Share Knowledge</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Code reviews, peer learning sessions, and internal docs that make everyone better.</p>
+          </div>
+          <div class="service-card bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-700 transition-all group fade-in delay-2">
+            <div class="text-emerald-400 text-2xl mb-4 text-center">🏆</div>
+            <h3 class="font-semibold text-white mb-2 text-lg">Compete Together</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Hackathons are still in our DNA. We keep entering, keep losing, learn from mistakes, keep getting better.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="py-24 px-6 bg-gray-900/40">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-emerald-400 font-mono text-sm mb-3 text-center">// the team</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">The people behind the code</h2>
+      <p class="text-gray-500 text-center max-w-lg mx-auto mb-16 text-sm">Update this section with your actual team members, roles, and links.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="team-grid">
+        <!-- Team cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-emerald-400 font-mono text-sm mb-3 text-center">// tech stack</p>
+      <h2 class="text-3xl font-bold text-white text-center mb-16">Tools we trust</h2>
+      <div class="flex flex-wrap justify-center gap-3" id="stack-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6 bg-gray-900/40">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-emerald-400 font-mono text-sm mb-3">// get in touch</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Want to work with us?</h2>
+      <p class="text-gray-400 mb-10 leading-relaxed">
+        Whether it's a collaboration, an idea, or just wanting to follow our journey - we'd love to hear from you.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <a href="mailto:belammuia0@gmail.comom" class="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold px-8 py-3 rounded-full transition-all hover:scale-105 text-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Send us a message
+        </a>
+        <a href="https://github.com/ByteForce-Inc" target="_blank" class="flex items-center justify-center gap-2 border border-gray-700 hover:border-emerald-500 text-gray-300 hover:text-emerald-400 font-medium px-8 py-3 rounded-full transition-all text-sm">
+          View on GitHub ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 py-3 px-3">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-600">
+      <span class="font-mono text-emerald-700">&lt;BF/&gt; ByteForce</span>
+      <span>Built with ❤️ and too much coffee</span>
+      <span>© <span id="year"></span> ByteForce</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>t
